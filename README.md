@@ -1,2 +1,3 @@
 # dotfiles
-+ .vimrc
++ [.vimrc](.vimrc)
++ [.zshrc](.zshrc)
