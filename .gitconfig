@@ -1,0 +1,7 @@
+[credential]
+	helper = cache --timeout=3600000
+[user]
+	name = Abhishek Jaisingh
+	email = abhi2254015@gmail.com
+[core]
+	editor = vim
