@@ -1,5 +1,5 @@
 # dotfiles
 + [.vimrc](vim/.vimrc)
-+ [.zshrc](.zshrc)
++ [.zshrc](zsh/.zshrc)
 + [.tmux.conf](.tmux.conf)
 + [.mongorc.js](.mongorc.js)
