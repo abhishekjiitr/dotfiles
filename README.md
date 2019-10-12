@@ -1,3 +1,5 @@
+![](https://github.com/abhishekjiitr/dotfiles/workflows/CI/badge.svg)
+
 # dotfiles
 + [.vimrc](vim/.vimrc)
 + [.zshrc](zsh/.zshrc)

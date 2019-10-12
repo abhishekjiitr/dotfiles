@@ -1,0 +1,17 @@
+name: CI
+
+on: push
+
+jobs:
+  my-job:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Basic Checks
+      env:
+        ZSHRC_PATH: zsh/.zshrc
+      run: |
+        sudo apt -y install shellcheck
+        shellcheck -s bash ${ZSHRC_PATH}
