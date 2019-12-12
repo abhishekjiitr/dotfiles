@@ -1,0 +1,17 @@
+source <(helm completion zsh | sed -E 's/\["(.+)"\]/\[\1\]/g')
+
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+
+# kubectl aliases
+[ -f ~/scripts/.kubectl_aliases ] && source ~/scripts/.kubectl_aliases
+
+alias kctx='kubectx'
+alias kns='kubens'
+alias k='kubectl'
+
+# Tower
+alias tunnel='ssh -D 8080 abhishek@abhisheklinux.gurg-off'
+alias tlogin='ssh abhishek@abhisheklinux.gurg-off'
+alias vpn='~/scripts/vpn_expect.sh'
