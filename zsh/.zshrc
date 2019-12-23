@@ -18,6 +18,11 @@ if [ -f ~/.shell_setup.sh ]; then
 	. ~/.shell_setup.sh
 fi
 
+if [ -f ~/.env_setup.sh ]; then
+	# shellcheck source=zsh/.env_setup.sh
+	. ~/.env_setup.sh
+fi
+
 if [ -f ~/.path_setup.sh ]; then
 	# shellcheck source=zsh/.path_setup.sh
 	. ~/.path_setup.sh
