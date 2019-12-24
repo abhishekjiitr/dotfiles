@@ -15,3 +15,6 @@ alias k='kubectl'
 alias tunnel='ssh -D 8080 abhishek@abhisheklinux.gurg-off'
 alias tlogin='ssh abhishek@abhisheklinux.gurg-off'
 alias vpn='~/scripts/vpn_expect.sh'
+
+# custom git aliases
+alias gs='git status'
