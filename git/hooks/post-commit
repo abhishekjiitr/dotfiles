@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export GIT_DIR=${GIT_DIR-`git rev-parse --git-dir`}
+echo $GIT_DIR
+
+if [ -z $"GIT_DIR" ]; then
+	echo "Incorrect Usage... Run this script on root of repo"
+	exit 1
+fi
+
+
+echo "Running GNU Stow, Updating Symlinks..."
+stow --adopt git mongodb tmux vim zsh
