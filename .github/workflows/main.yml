@@ -13,5 +13,5 @@ jobs:
       env:
         ZSHRC_PATH: zsh/.zshrc
       run: |
-        sudo apt -y install shellcheck
+        sudo apt-get -y install shellcheck
         shellcheck -s bash ${ZSHRC_PATH} -x
